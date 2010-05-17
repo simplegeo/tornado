@@ -1,0 +1,19 @@
+Source: python-tornado
+Section: python
+Priority: optional
+XS-Python-Version: >= 2.5
+Maintainer: Ian Eure <ian@simplegeo.com>
+Uploaders: Simplegeo Nerds <nerds@simplegeo.com>
+Build-Depends: debhelper (>= 7.0.50~), python (>= 2.6), cdbs, python-central
+Standards-Version: 3.8.4
+Homepage: http://www.tornadoweb.org/
+Vcs-Git: http://github.com/facebook/tornado.git
+Vcs-Browser: http://github.com/facebook/tornado
+
+Package: python-tornado
+Architecture: any
+XB-Python-Version: ${python:Versions}
+Depends: ${misc:Depends}, ${python:Depends}, ${shlibs:Depends}, python-pycurl, python-simplejson
+Description: A scalable, non-blocking web server written in Python
+ Tornado is an open source version of the web server and and tools
+ that power FriendFeed.
